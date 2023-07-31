@@ -1,8 +1,9 @@
 import React from 'react'
+import './Footer.css';
 
 function Footer() {
   return (
-    <footer className='text-red-500'>
+    <footer className='pie'>
       <small>Desarrollado y disenado por Lucas Gonzalez 2023</small>
     </footer>
   )
