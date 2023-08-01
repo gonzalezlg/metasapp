@@ -1,22 +1,18 @@
 import React from 'react'
-import './Main.css';
+import estilos from './Main.module.css';
 import Vinculo from './Vinculo';
 import {ReactComponent as ListaSVG} from '../../img/lista.svg';
 import {ReactComponent as NuevaSVG} from '../../img/nueva.svg';
 
 function Main({children}) {
   return (
-    <div className='principal'>
-      <aside className='aside'>
-       <Vinculo href='/lista' texto='Lista de Metas'> 
-          <ListaSVG className='icon' />
-       </Vinculo>
-       <Vinculo href='/crear' texto='Nueva Meta'> 
-          <NuevaSVG className='icon' />
-       </Vinculo>
+    <div className={estilos.principal}>
+      <aside className={estilos.aside}>
+       <Vinculo href='/lista' texto='Lista de Metas' Icono={ListaSVG}></Vinculo>
+       <Vinculo href='/crear' texto='Nueva Meta' Icono={NuevaSVG}></Vinculo>
       </aside>
 
-      <main className='main'>
+      <main className={estilos.main}>
         {children}
       </main>
       

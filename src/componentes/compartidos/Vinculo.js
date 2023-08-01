@@ -1,11 +1,11 @@
 import React from 'react'
-import './Vinculo.css';
+import estilos from './Vinculo.module.css';
 
-function Vinculo({children,texto, href}) {
+function Vinculo({Icono,texto, href}) {
   return (
-    <a href={href} className='link'>
-        {children}
-        <span>{texto}</span>
+<a href={href} className={estilos.link}>
+        <Icono className={estilos.icon}/>
+        {texto && <span className={estilos.text}>{texto}</span>}
     </a>
   )
 }

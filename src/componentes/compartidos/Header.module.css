@@ -21,7 +21,3 @@
 .link{
     @apply flex h-lg px-4;
 }
-
-.icon {
-    @apply h-6 w-6;
-}
